@@ -22,4 +22,20 @@ const people: [number, string][] = [
 //Intersections
 const productId: string | number = "1";
 
-console.log(age);
+//Enum
+enum Direction {
+  Up = 1,
+  Down = 2,
+  Left = "Esquerda",
+  Right = 4,
+}
+const direction = Direction.Left;
+
+// Type Assertions
+const productName: any = "Mouse";
+
+// let itemId = productName as string;
+
+let itemId = <string>productName;
+
+console.log(direction);
